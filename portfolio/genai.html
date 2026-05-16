@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Other Projects | Rong Ni</title>
+    <meta name="description" content="Other projects by Rong Ni, including Paper Reader." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="subpage">
+    <div class="cursor-light" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+    <main class="site-shell">
+      <header class="topbar page-topbar" aria-label="Site header">
+        <div class="topbar-left">
+          <a class="brand-mark" href="index.html" aria-label="Rong Ni home"><span>RN</span></a>
+        </div>
+        <nav class="topnav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="games.html">Games</a>
+          <a href="modeling.html">3D</a>
+        </nav>
+      </header>
+
+      <section class="page-hero">
+        <div>
+          <p class="eyebrow">Other projects</p>
+          <h1>Paper Reader</h1>
+          <p class="hero-line">
+            An AI-assisted desktop reader for research papers, designed around
+            grounded paper understanding, task-specific AI workflows, and user-controlled local data.
+          </p>
+          <dl class="project-meta hero-meta" aria-label="Paper Reader project facts">
+            <div>
+              <dt>Category</dt>
+              <dd>AI software application development</dd>
+            </div>
+            <div>
+              <dt>Format</dt>
+              <dd>Desktop research-paper reader</dd>
+            </div>
+            <div>
+              <dt>Evidence</dt>
+              <dd>GitHub repository and demo video</dd>
+            </div>
+          </dl>
+          <div class="hero-actions">
+            <a class="solid-link" href="https://github.com/Tentengg/Paper-Reader.git">
+              <span class="link-icon" aria-hidden="true"></span>
+              Paper Reader GitHub
+            </a>
+            <a class="ghost-link youtube-link" href="https://youtu.be/eEhbUBcyzes" data-youtube-id="eEhbUBcyzes">Open demo video</a>
+          </div>
+        </div>
+        <a class="hero-media youtube-link" href="https://youtu.be/eEhbUBcyzes" data-youtube-id="eEhbUBcyzes" aria-label="Open Paper Reader demo video">
+          <img src="assets/posters/genai-demo.jpg" alt="Paper Reader demo screen" />
+        </a>
+      </section>
+
+      <section class="detail-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Project overview</p>
+          <h2>Research reading with grounded AI support.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="detail-card">
+            <span>PDF workflow</span>
+            <h3>Paper Reader</h3>
+            <p>
+              Paper Reader combines PDF import, library folders, structured summaries,
+              research ideas, quick translation, term lookup, paper chat, annotation
+              workflows, vocabulary, Markdown notes, and configurable local storage.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="detail-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Technical contribution</p>
+          <h2>Engineering areas demonstrated in the project.</h2>
+        </div>
+        <ul class="evidence-list">
+          <li><strong>AI task design:</strong> translation, term lookup, summary, ideas, paper chat, and note generation are handled as separate feature tasks.</li>
+          <li><strong>Prompt contracts:</strong> prompt files define output formats and rules for consistent feature behavior.</li>
+          <li><strong>Reliability:</strong> timeout, retry, backoff, retryable-error detection, and provider fallback are described in the project notes.</li>
+          <li><strong>Output handling:</strong> structured outputs such as summaries, mindmaps, and terms are validated and repaired when formatting fails.</li>
+          <li><strong>Grounding:</strong> paper chat is designed around saved paper context and uncertainty when evidence is missing.</li>
+          <li><strong>Local data:</strong> PDFs, notes, and database storage are organized around a user-configurable local storage root.</li>
+        </ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
